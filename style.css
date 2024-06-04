@@ -99,6 +99,17 @@ a {
   height: 24px;
 }
 
+.btn-upload {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+
+  .is-grid & {
+    margin-bottom: 0;
+  }
+}
+
 .btn-more {
   padding: 8px 26px 7px;
   font-size: 11px;
@@ -357,16 +368,6 @@ a {
   gap: 7px;
 }
 
-.item-upload {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 16px;
-
-  .is-grid & {
-    margin-bottom: 0;
-  }
-}
-
 .load-more-inner {
   text-align: center;
   padding-bottom: 61px;
@@ -418,7 +419,7 @@ a {
   }
 
   .item-info-value,
-  .item-upload {
+  .btn-upload {
     margin-bottom: 0;
   }
 }
