@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webspark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        src="assets/background1.svg"
+        class="background-image bg-top"
+        alt=""
+      />
+      <img
+        src="assets/background2.svg"
+        class="background-image bg-bottom"
+        alt=""
+      />
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <img src="assets/logo.png" class="logo" alt="logo" />
+            <div class="header-content">
+              <div class="header-top">
+                <span class="header-title">monblanproject</span>
+                <button class="btn btn-date">Start on 17-02-2016</button>
+              </div>
+              <div class="header-info">
+                <div class="header-info-text">
+                  <span class="header-info-value">870</span>
+                  posts
+                </div>
+                <div class="header-info-text">
+                  <span class="header-info-value">11,787</span>
+                  followers
+                </div>
+                <div class="header-info-text">
+                  <span class="header-info-value">112</span>
+                  following
+                </div>
+              </div>
+              <div class="header-date">
+                <span class="header-date-text">Date</span>
+                <div class="header-date-content">
+                  <div class="header-date-inner">
+                    <input
+                      class="date-control"
+                      type="text"
+                      name="date_from"
+                      placeholder="from"
+                    />
+                    <i class="icon icon-close"></i>
+                    <i class="icon icon-calendar"></i>
+                  </div>
+                  <div class="header-date-inner">
+                    <input
+                      class="date-control"
+                      type="text"
+                      name="date_to"
+                      placeholder="to"
+                    />
+                    <i class="icon icon-close"></i>
+                    <i class="icon icon-calendar"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="view-controls-content">
+            <div class="view-controls">
+              <button id="grid-btn" class="btn btn-view">
+                <i class="icon-grid"></i>
+              </button>
+              <button id="row-btn" class="btn btn-view">
+                <i class="icon-row is-active"></i>
+              </button>
+            </div>
+          </div>
+          <ul id="list" class="list">
+            <li class="list-item">
+              <img
+                src="assets/images/image_1.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_2.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_3.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_4.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_5.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_6.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_7.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_1.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <img
+                src="assets/images/image_9.jpg"
+                class="item-image"
+                alt="preview"
+              />
+              <div class="item-content">
+                <div class="item-info">
+                  <span class="item-info-value">Today</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-info-value">9-08-2016</span>
+                  <div class="item-info-rating">
+                    <div class="item-info-likes">
+                      <i class="icon-like"></i>
+                      <div class="item-info-likes-value">128</div>
+                    </div>
+                    <div class="item-info-comments">
+                      <i class="icon-comment"></i>
+                      <div class="item-info-comments-value">31</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="item-upload">Image upload</span>
+                  <span class="item-upload-date">11-04-2016</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="load-more-inner">
+            <button class="btn btn-more">Load More</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
+
+    <script>
+      // Date Picker options
+      const dateFrom = document.querySelector('input[name="date_from"]');
+      const datepickerFrom = new Datepicker(dateFrom, {
+        clearButton: true,
+      });
+
+      const dateTo = document.querySelector('input[name="date_to"]');
+      const datepickerTo = new Datepicker(dateTo, {
+        clearButton: true,
+      });
+
+      // Content view
+      const gridButton = document.getElementById("grid-btn");
+      const rowButton = document.getElementById("row-btn");
+      const gridIcon = document.querySelector(".icon-grid");
+      const rowIcon = document.querySelector(".icon-row");
+      const list = document.getElementById("list");
+
+      gridButton.addEventListener("click", function () {
+        gridIcon.classList.add("is-active");
+        rowIcon.classList.remove("is-active");
+        list.classList.add("is-grid");
+      });
+
+      rowButton.addEventListener("click", function () {
+        rowIcon.classList.add("is-active");
+        gridIcon.classList.remove("is-active");
+        list.classList.remove("is-grid");
+      });
+    </script>
+  </body>
+</html>
